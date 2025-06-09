@@ -1,0 +1,9 @@
+# requirements.txt
+torch
+torchvision
+pandas
+numpy
+matplotlib
+seaborn
+Pillow
+scikit-learn
