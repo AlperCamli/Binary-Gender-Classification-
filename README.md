@@ -2,9 +2,9 @@
 
 This project applies **transfer learning** using the **VGG-16** convolutional neural network to classify binary gender (Male/Female) based on facial images. The model is trained and evaluated on a subset of the **CelebA** dataset.
 
-> 🔍 **Key Focus:** Explore the effects of different learning rates and fine-tuning strategies on classification performance.
+> **Key Focus:** Explore the effects of different learning rates and fine-tuning strategies on classification performance.
 
-## 📁 Project Structure
+## Project Structure
 
 - `notebooks/`: Jupyter notebooks with training and evaluation experiments
 - `data/`: Preprocessed CelebA30k subset (not included due to licensing)
@@ -13,7 +13,7 @@ This project applies **transfer learning** using the **VGG-16** convolutional ne
 - `README.md`: Project overview
 - `requirements.txt`: Python dependencies
 
-## 📊 Dataset
+## Dataset
 
 A custom subset of **CelebA** dataset (`CelebA30k`) with **30,000 facial images**, each annotated with multiple binary attributes. This project focuses only on the "Male" column.
 
@@ -21,14 +21,14 @@ A custom subset of **CelebA** dataset (`CelebA30k`) with **30,000 facial images*
 - Validation: 3,000 images (10%)
 - Test: 3,000 images (10%)
 
-## 🧠 Model Architecture
+## Model Architecture
 
 - **Base model:** VGG-16 pretrained on ImageNet
 - **Variants:**
   - Freeze all convolutional layers → Train classifier only
   - Fine-tune the last convolutional block + classifier
 
-## 🔧 Training Configurations
+## Training Configurations
 
 | Configuration                     | Learning Rate | Fine-Tuning Strategy       |
 |----------------------------------|---------------|----------------------------|
@@ -39,7 +39,7 @@ A custom subset of **CelebA** dataset (`CelebA30k`) with **30,000 facial images*
 
 Each model was trained for **10 epochs**.
 
-## 📈 Results
+## Results
 
 | Model | Accuracy | Precision | Recall | F1 Score | Train Time (s) |
 |-------|----------|-----------|--------|----------|----------------|
@@ -52,19 +52,19 @@ Each model was trained for **10 epochs**.
 - Best performance from Model 3: fine-tuning + higher learning rate.
 - No major overfitting or imbalance was observed.
 
-## 📌 Key Takeaways
+## Key Takeaways
 
 - **Fine-tuning** significantly boosts performance over freezing all layers.
 - **Learning rate** had minor effects, more pronounced in fine-tuning cases.
 - Confusion matrices confirmed **balanced classification** between genders.
 - All models reached **high accuracy (~94–96%)**.
 
-## 🧪 Notebook
+## Notebook
 
 You can view the original notebook here:  
 📎 [Google Colab Notebook](https://drive.google.com/file/d/1YQtea41Jd9IApPdjg6MKlvqj56cCLrgB/view?usp=sharing)
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Clone the repository:
    ```bash
